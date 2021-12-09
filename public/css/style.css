@@ -1,0 +1,42 @@
+:root {
+  --backColor: #061125;
+  --offGrey: #949987;
+  --contrastHover: #c07116;
+}
+* {
+  font-family: Montserrat, sans-serif;
+}
+
+#particles-js {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--contrastHover);
+}
+
+.intro {
+  position: fixed;
+  left: 10%;
+  top: 24%;
+  width: 25%;
+  font-size: 140%;
+  color: var(--offGrey);
+}
+
+.myLinks {
+  position: fixed;
+  font-size: 200%;
+  color: var(--offGrey);
+  left: 60%;
+  top: 60%;
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+}
