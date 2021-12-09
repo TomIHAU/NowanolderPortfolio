@@ -57,6 +57,10 @@ h2 {
   z-index: 10;
 }
 
+p {
+  line-height: 2;
+}
+
 /* old stuff */
 .projectCards {
   flex: 1;
@@ -126,4 +130,15 @@ img {
   opacity: 0;
 }
 .hoverText {
+}
+
+.text {
+  position: absolute;
+  top: 30%;
+  padding: 0 5% 0 30%;
+  font-size: 120%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
 }
