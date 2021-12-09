@@ -2,9 +2,17 @@
   --backColor: #061125;
   --offGrey: #949987;
   --contrastHover: #c07116;
+  --borderColor: #030508;
 }
+
 * {
   font-family: Montserrat, sans-serif;
+}
+
+body {
+  height: 100%;
+  background-color: var(--backColor);
+  color: var(--offGrey);
 }
 
 #particles-js {
@@ -39,4 +47,83 @@ a:hover {
   display: flex;
   flex-direction: column;
   line-height: 2;
+}
+
+h2 {
+  top: 10%;
+  position: fixed;
+  left: 10%;
+  font-size: 200%;
+  z-index: 10;
+}
+
+/* old stuff */
+.projectCards {
+  flex: 1;
+  display: block;
+  top: 20%;
+  left: 10%;
+  position: absolute;
+  padding: 0 50px;
+}
+.projectCards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+img {
+  border: 2px solid var(--borderColor);
+  border-radius: 10px;
+  margin-right: 2%;
+}
+
+.image {
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: auto;
+  height: calc(100% - 36px);
+  margin-right: 2%;
+  width: 304px;
+  opacity: 0.5;
+  transition: 0.5s;
+  background-color: black;
+  border-radius: 10px;
+}
+.hoverText {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 45%;
+  font-size: 20px;
+  text-align: center;
+  display: none;
+  color: #030508;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0 20px 20px;
+  width: 300px;
+  min-height: 200px;
+}
+
+.card:hover figcaption {
+  color: var(--contrastHover);
+}
+
+.card:hover .overlay {
+  opacity: 0;
+}
+.hoverText {
 }
